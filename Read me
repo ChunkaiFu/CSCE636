@@ -1,1 +1,12 @@
-this is just a test.
+This is the solution for homework 2 for CSCE636 Deep Learning class. This is the best accuracy I have got without dramatically increase computation.
+The following changes were made to the original colab file:
+The number of neurons in the layers, dropout rate for each layer, the learning rate, the size of the validation and training dataset. 
+
+These are some observations during hyperparameter tuning:
+The training and inference performance seems sensitive to learning rate. A smaller learning rate within certain range leads to a smoother learning curve. 
+The addition of dropout layers is effective in reducing over fitting. A dropout rate of around 0.3 is a sweet point in this case.
+The size of the validation dataset us decreased from 10000/25000 to 5000/25000. This gives us more data for training but the trade off is that the validation 
+curves may not look very good. 
+The optimizer does not seem to affect tge performance much. RMSprop gives consistent results in this case. I have read that the optimizer should be selected 
+based on the features of data, but i have not got a chance to experiment with it yet. 
+The number of epoches needs to be changed in the retraining to obtain the benefits of the tuned hyperparameters. 
