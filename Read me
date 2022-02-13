@@ -10,3 +10,4 @@ curves may not look very good.
 The optimizer does not seem to affect tge performance much. RMSprop gives consistent results in this case. I have read that the optimizer should be selected 
 based on the features of data, but i have not got a chance to experiment with it yet. 
 The number of epoches needs to be changed in the retraining to obtain the benefits of the tuned hyperparameters. 
+The change of some hyperparameters may require too much resource in colab. 
